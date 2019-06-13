@@ -1,0 +1,189 @@
+/*      BACKGROUND         */
+html,body{ overflow-x: hidden;}
+html{
+    height: 100%;
+  }
+  body {
+    position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100%;
+  }
+  body::after {
+    content: "";
+    background: url('../img/bg1.png') center center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+/*--------------------*/
+/*      NAVBAR         */
+nav{ 
+    font-size: 120%; 
+    background: #535353;
+    font-weight: bold;
+}
+nav a {color: white;}
+nav ul {width: 100%; padding: 0; margin: 0;}
+.nav-pills li:hover {background: #d7d601;}
+nav li:hover a {color: #2E2E2E;}
+
+.nav-pills .nav-link.active i, .nav-pills .nav-link.active, .nav-pills .show>.nav-link i{ /*hover when active*/
+    background-color: #535353;
+    color: #d7d601;
+    cursor: default;
+    pointer-events: none; /* 'not clicable' */
+}
+
+/*-------------------- */
+/*        SLIDE        */
+#slide{
+    font-family: 'Black Ops One', sans-serif; 
+    text-align: center;
+    text-shadow: 2px 2px 4px white;
+}
+/*-------------------- */
+/*      ABOUT US       */
+#about{
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.226);
+    text-align: center;
+   /* font-family: 'Quando', sans-serif;*/
+    font-family: 'Black Ops One', sans-serif; 
+}
+#about li,ul{
+    /*list-style-image: url('../img/lista.png');*/
+    text-align: left;
+}
+.text-resp { font-size: 130%;}
+#more{
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+}
+#more-content{
+    background: url('../img/bg1.png') center center;
+    background-color: white; 
+}
+/*------------------*/
+/*      GALLERY     */
+#gallery{
+    background-color: #b8d60f2c;
+    text-align: center;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+#gallery img {
+    padding: 0;
+    margin: 0;
+    height:20vh;  
+    width: 30vh;
+    filter: gray; 
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    margin-bottom:20px;
+}
+#gallery img:hover {
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+/*   GALERY.HTML    */
+.row,
+.row > .column {
+    padding: 8px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+}
+.show {
+  display: block;
+}
+#sh-more{
+    position: relative;
+}
+/*------------------*/
+/*   COOPERATION    */
+#cooperation{
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif; 
+    color: black;
+    padding: 0;
+    margin: 0;
+} /*
+#cooperation img{
+    padding: 0;
+    margin: 0;
+    filter: gray; 
+    -webkit-filter: grayscale(1); 
+}
+#cooperation img:hover {
+    filter: none; 
+    -webkit-filter: grayscale(0);  
+}
+*/
+/*------------------*/
+/*     CONTACT      */
+#contact{
+    background-color: rgba(0, 0, 0, 0.39);
+    color: black;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+/*------------------*/
+/*      BUTTON     */
+.button-default{
+    background: url('../img/bg-dark.png');
+    color: white;
+    border: none;   
+    font-family: 'Black Ops One', sans-serif; 
+}
+.button-default:hover{
+    background: url('../img/bg-dark.png');
+    color: silver;
+    border: none;
+    box-shadow: 0px 2px 5px gray;
+    font-family: 'Black Ops One', sans-serif;
+}
+.w3-button{ 
+    background-color: silver; 
+    width:100%;}
+
+/*-------------------*/
+/*  EVERYTHING ELSE  */
+
+p{color: black;}
+
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.invisible{visibility: hidden;}
+.bg-more{background-color: #d7d601;}
+
+/*------------------*/
+
+@media all and (min-device-width: 1200px){
+    nav{ min-height: 100vh;}
+    #more{ padding-left: 30vh;}
+}
+
+@media all and (max-device-width: 777px){
+    .text-resp { font-size: 100%;}
+}
+
+@media all and (max-device-width: 370px){
+    #slide{ font-size: 60%;}
+}

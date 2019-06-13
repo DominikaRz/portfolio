@@ -1,0 +1,117 @@
+
+a{color: grey;}
+p{color: grey;}
+.delay{animation-delay: 1s;}
+.invisible{visibility: hidden;}
+
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+nav{ font-size: 130%;}
+.navbar-default{ background:linear-gradient(45deg,#780206,#061161);}
+.navbar-default a{color:white;}
+html,body{ overflow-x: hidden;}
+
+/*-----------------------------------------------*/
+#slide{
+    height: 100%;
+    width: 100%;    /*  */
+    background: linear-gradient(45deg,#780206,#061161); 
+    color: white;
+    text-align: center;
+    align-content: center;
+    padding-top: 8vh;
+    padding: 0;
+}
+#video { width: 100%;}
+#video-section{
+    right:0;
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    align-content: center;
+}
+.content{
+    background: none;
+    height: 100%;
+    width: 70%;
+}
+.w3-padding{ padding: 20% 0%!important;}
+/*-----------------------------------------------*/
+#kFeature{
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    padding: 0; /*top right bottom left*/
+
+}
+#kFeature h6{ color: grey;}
+#kFeature .animated{animation-duration: 3s;}
+
+/*-----------------------------------------------*/
+#software{
+    height: 70%;
+    width: 100%;
+    background: linear-gradient(45deg,#780206,#061161);
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+#software h1{text-align: center;}
+#caro{ height: 40vh;}
+.center-block {
+    float:none;
+  }
+/*-----------------------------------------------*/
+#testimonials{
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    padding-left: 2vh;
+}
+#testimonials h1{text-align: center;}
+#testimonials .animated{animation-duration: 0.6s;}
+
+/*-----------------------------------------------*/
+#contact{
+    height: 80%;
+    width: 100%;
+    background-color:#363636;
+    color: white;
+}
+/*-----------------------------------------------*/
+.button-default{
+    background: none;
+    display: block;
+    border-color: white;   
+}
+.button-default:hover{
+    background: linear-gradient(45deg,#061161,#780206);
+    border-color: white;
+}
+/*-----------------------------------------------*/
+@media all and (max-device-width: 1760px){
+    .display-3{ font-size: 300%;}
+}
+@media all and (max-device-width: 780px){
+    .display-3{ font-size: 300%;}
+    #wideo{height: 50%;} 
+}
+@media all and (max-device-width: 650px){
+    .display-3{ font-size: 200%;}
+    .w3-padding{ padding: 20% 0%!important;}
+    #wideo{height: 50%;} 
+}
+@media all and (max-device-width: 360px){
+    .display-3{ font-size: 150%;}
+    p{ font-size: 80%;}
+    h1{ font-size: 130%;}
+    #slide{padding-top: 20%;}
+    .w3-padding{ padding: 30% 0%!important;}
+    #wideo{height: 10%;} 
+}
+/*---------------------------------------------------*/

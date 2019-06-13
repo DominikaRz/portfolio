@@ -1,0 +1,489 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<meta name="" content=""/>-->
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+<!--CSS-->
+    <link rel="stylesheet" href="css/uikit.css"/>
+    <link rel="stylesheet" href="css/uikit-rtl.css"/>
+    <link rel="stylesheet" href="css/styl.css"/>
+<!--JS-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+
+<!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css"/>
+<!--FONTS-->
+    <link href='https://fonts.googleapis.com/css?family=Charmonman' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Combo' rel='stylesheet'>
+
+    <!-- -->
+
+    <title>INDEX1</title>
+  </head>
+  <body>
+  <!--NAVBAR :)-->
+    <div id="myNavbar" class="uk-position-fixed uk-position-top-right uk-hidden@xl uk-hidden@l uk-hidden@m uk-hidden@s">
+      <a href="#offcanvas-slide" class="uk-button uk-button-default" uk-toggle>
+        <i class="uk-margin-small-right" uk-icon="icon: more"></i>
+      </a>
+      <div id="offcanvas-slide" class=" uk-hidden@xl uk-hidden@l uk-hidden@m uk-hidden@s" uk-offcanvas="overlay: true;">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+          <ul class="uk-nav-primary uk-light">
+            <li>
+              <a class="" id="logo" href="#" uk-scroll>
+                   <img src="img/logo.png" alt="logo" class="img-responsive" id="logo" width="52"/>
+              </a>
+            </li>
+              <li>
+                <a class="" href="#" uk-scroll>
+                  <i class="uk-margin-small-right" uk-icon="icon:home"></i>Strona główna
+                </a>
+              </li>
+              <li uk-toggle="target: #about; animation: uk-animation-fade, uk-animation-fade">
+                <a href="#about" class="" uk-scroll>
+                  <i class="uk-margin-small-right" uk-icon="icon:user"></i>O mnie
+                 </a>
+               </li>
+              <li><a class="" href="#portf" uk-scroll>
+                  <i class="uk-margin-small-right" uk-icon="icon:image"></i>Portfolio
+                </a>
+              </li>
+              <li>
+                <a class="" href="#blog" uk-scroll>
+                  <i class="uk-margin-small-right" uk-icon="icon: quote-right"></i>Blog
+                </a>
+              </li>
+              <li>
+                <a class="" href="#contact" uk-scroll>
+                  <i class="uk-margin-small-right" uk-icon="icon: receiver"></i>Kontakt
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-position-fixed uk-position-center-right uk-navbar-transparent xl">
+        <ul class="uk-nav-primary uk-position-relative">
+          <li>
+            <a class="" id="logo" href="#" uk-scroll>
+                 <img src="img/logo.png" alt="logo" class="img-responsive" id="logo" width="22"/>
+            </a>
+          </li><li>
+            <a href="#" uk-scroll>
+              <i class="uk-margin-small-right ic1" uk-icon="icon:home" uk-tooltip="title: Strona główna; pos: left"></i>
+            </a>
+          </li><li uk-toggle="target: #about; animation: uk-animation-fade, uk-animation-fade">
+            <a href="#about" class="" uk-scroll>
+              <i class="uk-margin-small-right ic2" uk-icon="icon:user" uk-tooltip="title: O mnie; pos: left"></i>
+            </a>
+           </li><li>
+             <a href="#portf" uk-scroll>
+              <i class="uk-margin-small-right ic3" uk-icon="icon:image" uk-tooltip="title: Portfolio; pos: left"></i>
+            </a>
+          </li><li>
+            <a href="#blog" uk-scroll>
+              <i class="uk-margin-small-right ic4" uk-icon="icon: quote-right" uk-tooltip="title: Blog; pos: left"></i>
+            </a>
+          </li><li>
+            <a href="#contact" uk-scroll>
+              <i class="uk-margin-small-right ic5" uk-icon="icon: receiver" uk-tooltip="title: Kontakt; pos: left"></i>
+            </a>
+          </li>
+        </ul>
+      <script>
+        $(document).ready(function(){ //color change from black to white
+            var scroll_pos = 0;
+          //  var position = $("#about").offset();
+          //  var PAt = position.top;
+            $(document).scroll(function() {
+                scroll_pos = $(window).scrollTop();
+                if(scroll_pos >= 350) { $(".ic5").css('color', 'white');
+                  if(scroll_pos >= 400) { $(".ic4").css('color', 'white');
+                    if(scroll_pos >= 438) { $(".ic3").css('color', 'white');
+                      if(scroll_pos >= 470) { $(".ic2").css('color', 'white');
+                        if(scroll_pos >= 500) { $(".ic1").css('color', 'white');
+                        }
+                      }
+                    }
+                  }
+                }
+                if(scroll_pos <= 500) { $(".ic1").css('color', 'black');
+                  if(scroll_pos <= 470) { $(".ic2").css('color', 'black');
+                    if(scroll_pos <= 438) { $(".ic3").css('color', 'black');
+                      if(scroll_pos <= 400) { $(".ic4").css('color', 'black');
+                        if(scroll_pos <= 350) { $(".ic5").css('color', 'black');
+                        }
+                      }
+                    }
+                  }
+                }
+            });
+        });
+
+      </script>
+    </div>
+  <!--MAIN-->
+    <main>
+    <!--SLIDER + (short) :)-->
+      <div id="slider" class="uk-flex uk-flex-middle uk-flex-center">
+          <span class="uk-overlay" id="short">
+            <img src="img/logo.png" alt="logo" class="uk-align-center " uk-img/>
+            <h1 class="uk-heading-large">Witam w&nbsp;marzeniach!</h1>
+            <hr style="border: 0.5px solid grey;"/>
+            <h3>Nazywam się Dominika&nbsp;Rzepka.</h3>
+            <p>
+              Jestem pogramistą, grafikiem oraz&nbsp;web&nbsp;deweloperem.<br/>
+              Poza tym interesuje mnie szeroko&nbsp;pojęta&nbsp;informatyka.<br/>
+              Mam nadzieję, że&nbsp;spodoba Ci&nbsp;się&nbsp;moja&nbsp;strona.
+            </p>
+          </span>
+        </div>
+     <!--ABOUT //when toggle :)-->
+      <div id="about"> <!--add ' hidden ' when finished?-->
+        <div id="more" class="uk-text-center uk-child-width-1-2@m uk-child-width-expand@s uk-padding" uk-grid>
+          <div>
+            <h2 class="child0 uk-flex uk-flex-bottom ">Trochę więcej o&nbsp;mnie</h2>
+            <img src="img/profile1.jpg" alt width="300" class="parent"/>
+          </div>
+          <div class="uk-card uk-card-default uk-card-large uk-card-body">
+            <h3>
+              Jestem certyfikowanym technikiem informatykiem, a&nbsp;za&nbsp;niedługo inżynierem.
+              Studiuję na&nbsp;Wrocławskiej Wyższej Szkole Informatyki Stosowanej
+              na&nbsp;kierunku: <i>Informatyka</i> w&nbsp;specjalności: <i>Aplikacje biznesowe JAVA&nbsp;EE</i>.
+            </h3>
+          </div>
+        </div>
+        <hr class="hr1"/>
+        <div class="uk-child-width-1-3@m uk-child-width-expand@s uk-text-center uk-padding" uk-grid>
+          <div>
+            <i uk-icon="icon:paint-bucket" height="50" width="50"></i>
+            <p>Posługuję się programami takimi jak <b>Adobe Photoshop, Gimp, Corel, Inkscape</b>.</p>
+          </div>
+          <div>
+            <i uk-icon="icon:world" height="50" width="50"></i>
+            <p>Piszę również strony internetowe oparte na <b>HTML5, CSS3, Bootstrap, UIkit, JavaScript, JQuery, PHP</b>.</p>
+          </div>
+          <div>
+            <i uk-icon="icon:code" height="50" width="50"></i>
+            <p>Potrafię programować w takich językach jak: <b>JAVA, C++, PASCAL</b>.</p>
+          </div>
+        </div> <!-- -->
+        <hr class="hr2"/>
+      </div>
+     <!--PORTFOLIO -->
+      <div id="portf" class="uk-padding">  <!-- dokończyć!! -->
+        <div id="headerP">
+          <div class="uk-child-width-1-2@m parent" uk-grid>
+            <div><img src="img/photo/fot/3.jpg" alt/></div>
+            <div class="child1">
+              <h1 class="h1ader">Portfolio</h1>
+              <h3 class="h3ader">zobacz co doładnie potrafię</h3>
+            </div>
+          </div>
+        </div>
+        <div id="content" class="uk-text-center uk-child-width-1-2@m uk-child-width-expand@s uk-padding" uk-grid>
+          <div>
+            <div class=" uk-margin uk-float-left">
+              <div><img src="img/photo/fot/1.jpg" alt/></div>
+              <div class="uk-card uk-card-default uk-card-medium uk-card-body uk-text-center ">
+                <button class="uk-button uk-button-default uk-margin-small-right"
+                  type="button" uk-toggle="target: #moda1P">Zdjęcia i&nbsp;grafiki&nbsp;...</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-margin uk-float-left">
+              <div class=""><img src="img/photo/fot/2.jpg" alt/></div>
+              <div class="uk-card uk-card-default uk-card-medium uk-card-body uk-text-center">
+                <button class="uk-button uk-button-default uk-margin-small-right"
+                  type="button" uk-toggle="target: #moda2P">Strony internetowe&nbsp;...</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modalsP">
+          <div id="moda1P"class="uk-flex-top" uk-modal>
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-flex uk-flex-middle uk-flex-center uk-hidden@xl uk-hidden@l uk-hidden@m uk-hidden@s warr">
+              <div class="uk-overlay">
+                <h1 class="h4ader">Obróć swoje urządzenie </h1>
+                <i class="uk-margin-small-right" uk-icon="icon:phone-landscape; ratio: 4.5"></i>
+              </div>
+            </div>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
+              <ul class="uk-slider-items uk-grid xl">
+                  <li class="uk-width-3-4">
+                      <div class="uk-panel">
+                          <img src="img/photo/fot/2.jpg" alt="">
+                          <div class="uk-overlay uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                              <h4 class="h4ader">Żłóty szlak Broumowskie ściany</h4>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="uk-width-3-4">
+                      <div class="uk-panel">
+                          <img src="img/photo/fot/3.jpg" alt="">
+                          <div class="uk-overlay uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                              <h4 class="h4ader">Latolistek na forsycjach</h4>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="uk-width-3-4">
+                      <div class="uk-panel">
+                          <img src="img/photo/fot/5.jpg" alt="">
+                          <div class="uk-overlay uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                              <h4 class="h4ader">W drodze na wodospad pośny</h4>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="uk-width-3-4">
+                      <div class="uk-panel">
+                          <img src="img/photo/fot/10.jpg" alt="">
+                          <div class="uk-overlay uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                              <h4 class="h4ader">Jodła koreańska</h4>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="uk-width-3-4">
+                      <div class="uk-panel">
+                          <img src="img/photo/fot/1.jpg" alt="">
+                          <div class="uk-overlay uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                              <h4 class="h4ader">W drodze na perłę zachodu</h4>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+              <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+          </div>
+          <div id="moda2P"class="uk-flex-top" uk-modal>
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
+              <div class="uk-flex uk-flex-middle uk-flex-center uk-hidden@xl uk-hidden@l uk-hidden@m uk-hidden@s warr ">
+                <div class="uk-overlay">
+                  <h1 class="h4ader">Obróć swoje urządzenie </h1>
+                  <i class="uk-margin-small-right" uk-icon="icon:phone-landscape; ratio: 4.5"></i>
+                </div>
+              </div>
+              <ul class="uk-slider-items uk-grid xl">
+                  <li class="uk-width-3-4">
+                      <div class="uk-panel">
+                          <img src="img/photo/str/AgriControl/AgriControl.jpg" alt="">
+                          <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                              <h4 class="h4ader">Strona produktu</h4>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="uk-width-3-4">
+                      <div class="uk-panel">
+                          <img src="img/photo/str/Leśniak/Leśniak.jpg" alt="">
+                          <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                              <h4 class="h4ader">strona usług</h4>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+              <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+     <!--BLOG -->
+      <div id="blog">
+        <div class="uk-padding">
+          <div class="break"></div>
+          <h1 class="h1ader">Blog</h1><h3 class="h3ader">co tak na prawdę jest ciekawe</h3>
+        </div>
+        <div id="slidB" uk-slider>
+          <div class="uk-slider-container" tabindex="-1">
+            <ul class="uk-slider-items uk-grid uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m ">
+              <li><div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="img/slide.jpg" uk-img>
+                  <div class="uk-card uk-card-default uk-overlay uk-overlay-default">
+                    <div class="uk-card-body">
+                      <div class="uk-width-expand">
+                        <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="uk-card-footer">
+                      <a href="#modalB" class="uk-button uk-button-text readm" uk-toggle>Read more</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="img/slide.jpg" uk-img>
+                  <div class="uk-card uk-card-default uk-overlay uk-overlay-default">
+                    <div class="uk-card-body">
+                      <div class="uk-width-expand">
+                        <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="uk-card-footer">
+                      <a href="#modalB" class="uk-button uk-button-text readm" uk-toggle>Read more</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="img/slide.jpg" uk-img>
+                  <div class="uk-card uk-card-default uk-overlay uk-overlay-default">
+                    <div class="uk-card-body">
+                      <div class="uk-width-expand">
+                        <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="uk-card-footer">
+                      <a href="#modalB" class="uk-button uk-button-text readm" uk-toggle>Read more</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="img/slide.jpg" uk-img>
+                  <div class="uk-card uk-card-default uk-overlay uk-overlay-default">
+                    <div class="uk-card-body">
+                      <div class="uk-width-expand">
+                        <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="uk-card-footer">
+                      <a href="#modalB" class="uk-button uk-button-text readm" uk-toggle>Read more</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="img/slide.jpg" uk-img>
+                  <div class="uk-card uk-card-default uk-overlay uk-overlay-default">
+                    <div class="uk-card-body">
+                      <div class="uk-width-expand">
+                        <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="uk-card-footer">
+                      <a href="#modalB" class="uk-button uk-button-text readm" uk-toggle>Read more</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="img/slide.jpg" uk-img>
+                  <div class="uk-card uk-card-default uk-overlay uk-overlay-default">
+                    <div class="uk-card-body">
+                      <div class="uk-width-expand">
+                        <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="uk-card-footer">
+                      <a href="#modalB" class="uk-button uk-button-text readm" uk-toggle>Read more</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                data-src="img/slide.jpg" uk-img>
+                  <div class="uk-card uk-card-default uk-overlay uk-overlay-default">
+                    <div class="uk-card-body">
+                      <div class="uk-width-expand">
+                        <h3 class="uk-card-title uk-margin-remove-bottom">
+                          <a href="#" class="uk-button uk-button-text readm" uk-toggle>See more...</a>
+                        </h3>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--modal-->
+          <div id="modalB" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+              <button class="uk-modal-close-default" type="button" uk-close></button>
+              <article id="modalB" class="uk-article">
+                <h1 class="uk-article-title"><a class="uk-link-reset" href="">Heading</a></h1>
+                <p class="uk-article-meta">Written by <a href="#">Dominika Rzepka</a> on 08 June 2019.</p>
+                <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                  <div>
+                    <a class="uk-button uk-button-text" href="#">5 Comments</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        </div>
+      </div>
+     <!--CONTACT -->
+        <div id="contact">
+          <div uk-grid>
+            <h2>Masz jakieś pytania?
+              <a class="uk-button uk-button-default" href="#modalC" uk-toggle>Zadaj&nbsp; je ...</a>
+            </h2>
+          </div>
+          <div id="modalC" class="uk-modal-container" uk-modal>
+            <div class="uk-modal-dialog">
+              <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                <div class="uk-background-cover uk-height-medium uk-flex uk-flex-center uk-flex-middle" data-src="img/feather.jpg"
+                uk-img><h1 class="uk-heading-medium">Wyślij wiadomość:</h1></div>
+                <div class="uk-padding-large">
+                  <form class="uk-form-stacked">
+                    <div class="uk-margin">
+                      <label class="uk-form-label" for="form-stacked-text">E-mail</label>
+                      <div class="uk-inline">
+                        <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                        <input class="uk-input uk-form-width-medium" type="text" placeholder="Podaj swój email ...">
+                      </div>
+                    </div>
+                    <div class="uk-margin">
+                      <label class="uk-form-label" for="form-stacked-text">Wiadomość</label>
+                      <div class="uk-inline">
+                        <textarea class="uk-textarea uk-form-width-large"  type="text" placeholder="Napisz to, o&nbsp;co&nbsp;chcesz zapytać lub czego chcesz się dowiedzieć..."
+                        rows="2"></textarea>
+                      </div>
+                    </div>
+                    <div class="uk-margin">
+                      <button class="uk-button uk-button-default uk-modal-close" type="button">Anuluj</button>
+                      <button class="uk-button uk-button-green" type="button">Wyślij</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="rights">
+          <p>
+            <img src="img/logo.png" alt="logo" class="img-responsive reveal-inline-block pb-1" width="20"/>
+            W marzeniach&copy;. 2019. All right reserved.
+          </p>
+        </div>
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="PUH, Krzysztof Leśniak,PRZEDSIĘBIORSTWO USŁUGOWO-HANDLOWE"/>
+    
+    <link rel="shortcut icon" href="" type="image/x-icon">
+<!--CSS-->
+    <link rel="stylesheet" href="css/w3.css"/>
+    <link rel="stylesheet" href="css/tuesday.css"/>
+    <link rel="stylesheet" href="css/cssanimation.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <link rel="stylesheet" href="css/styl.css"/>
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--FONTY-->
+    <link href='http://fonts.googleapis.com/css?family=Black+Ops+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'> <!--font-family: 'Black Ops One', sans-serif;-->
+    <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'> <!--//font-family: 'Alfa Slab One',sans-serif;--> 
+    <title>PUH Krzysztof Leśniak</title>
+</head>
+<body>
+<!--NAVBAR-->
+    <aside class="col-12 col-xl-2 p-0 bg-dark sticky fixed-top fix-for-navbar-fixed-top-spacing ">
+        <nav id="myNav" class="navbar navbar-expand-xl flex-xl-column align-items-start" role="navigation">
+            <a class="navbar-brand text-lg-left pl-2 flex-sm-column align-self-center" href="index.html" title="PRZEDSIĘBIORSTWO USŁUGOWO-HANDLOWE Krzysztof Leśniak">
+                <!-- <h4 style="font-family: 'Quando', sans-serif;">PUH K. Leśniak</h4> -->
+                <img src="img/logos/logo.png" alt="PUH Krzysztof Leśniak" class="img-responsive reveal-inline-block" id="logo" width="100"/>
+            </a>
+            <button class="navbar-toggler navbar-dark align-self-center" type="button" style="border-color: #ADADAD;" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse align-items-start w-100 " id="navbarContent">
+                <ul class="flex-sm-column flex-sm-row navbar-nav justify-content-between nav-pills">
+                        <div role="separator" class="dropdown-divider"></div>
+                    <li class="nav-item pl-0"><a class="nav-link rounded-0" href="index.html"><i class="fas fa-home"></i>&nbsp; Strona główna</a></li>
+                    <li class="nav-item pl-0"><a class="nav-link rounded-0" href="#gallery"><i class="fas fa-images"></i>&nbsp; Galeria</a></li>
+                    <li class="nav-item pl-0"><a class="nav-link rounded-0" href="#contact"><i class="fas fa-phone"></i>&nbsp;&nbsp;Kontakt</a></li>
+                    <div role="separator" class="dropdown-divider"></div>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+<!--MAIN--> 
+<main role="main" class="ml-sm-auto col-xl-10 p-0 m-0"><!--w3-padding w3-display-topmiddle-->
+    <!--SLIDE-->
+    <div class="row container-fluid justify-content-center w3-panel mt-5">
+        <div id="slide" class="col-10 align-self-center w3-cell-row w3-padding-64">
+            <div class="w3-container w3-cell w3-cell-middle">
+                <img src="img/kostki.png" alt="PUH Krzysztof Leśniak" class="img-responsive reveal-inline-block" id="logo" width="300"/>
+                <h2>PRZEDSIĘBIORSTWO USŁUGOWO-HANDLOWE<br/>Krzysztof Leśniak</h2>
+            </div>
+        </div>
+    </div>
+    <!--.........................................................-->
+    <!--GALLERY-->
+        <div id="gallery" class="w3-panel">
+            <div class="row gallery">
+                <div class="col-12">
+                    <h1>Galeria zdjęć</h1>
+                </div>
+            </div>
+            <div class="row align-self-center">
+                <div id="myBtnContainer" class="col-12">
+                    <button class="button-default" onclick="filterSelection('all')"> Show all</button>
+                    <button class="button-default" onclick="filterSelection('nature')"> Nature</button>
+                    <button class="button-default" onclick="filterSelection('brick')"> Brick</button>
+                    <button class="button-default" onclick="filterSelection('people')"> People</button>
+                </div>
+            </div>
+            <div class="row pt-3 pl-3 pr-3">
+                <div class="col-4 col-xl-2 col-lg-3 col-md-4 col-sm-4 col-xs-4 thumb column nature">
+                    <a href="img/photo/garden-moss-1.jpg" class="fancybox content" rel="ligthbox">
+                        <img src="img/photo/garden-moss-2.jpg" class="img-fluid"  alt="">
+                    </a>
+                </div>
+                <div class="col-4 col-xl-2 col-lg-3 col-md-4 col-sm-4 col-xs-4 thumb column nature">
+                    <a href="img/photo/buildings1.jpg" class="fancybox content" rel="ligthbox">
+                        <img src="img/photo/buildings2.jpg" class="img-fluid"  alt="">
+                    </a>
+                </div>
+                <div class="col-4 col-xl-2 col-lg-3 col-md-4 col-sm-4 col-xs-4 thumb column brick">
+                    <a href="img/photo/cobblestone1.jpg" class="fancybox content" rel="ligthbox">
+                        <img src="img/photo/cobblestone2.jpg" class="img-fluid"  alt="">
+                    </a>
+                </div>
+                <div class="col-4 col-xl-2 col-lg-3 col-md-4 col-sm-4 col-xs-4 thumb column brick">
+                    <a href="img/photo/floor1.jpg" class="fancybox content" rel="ligthbox">
+                        <img src="img/photo/floor2.jpg" class="img-fluid"  alt="">
+                    </a>
+                </div>
+                <div class="col-4 col-xl-2 col-lg-3 col-md-4 col-sm-4 col-xs-4 thumb column brick">
+                    <a href="img/photo/ground1.jpg" class="fancybox content" rel="ligthbox">
+                        <img src="img/photo/ground2.jpg" class="img-fluid"  alt="">
+                    </a>
+                </div>
+                <div class="col-4 col-xl-2 col-lg-3 col-md-4 col-sm-4 col-xs-4 thumb column nature">
+                    <a href="img/photo/masonry1.jpg" class="fancybox content" rel="ligthbox">
+                        <img src="img/photo/masonry2.jpg" class="img-fluid"  alt="">
+                    </a>
+                </div>
+                <div class="col-4 col-xl-2 col-lg-3 col-md-4 col-sm-4 col-xs-4 thumb column nature">
+                    <a href="img/photo/rocks1.jpg" class="fancybox content" rel="ligthbox">
+                        <img src="img/photo/rocks2.jpg" class="img-fluid"  alt="">
+                    </a>
+                </div>
+                <div class="col-4 col-xl-2 col-lg-3 col-md-4 col-sm-4 col-xs-4 thumb column people">
+                    <a href="img/photo/walk1.jpg" class="fancybox content" rel="ligthbox">
+                        <img src="img/photo/walk2.jpg" class="img-fluid"  alt="">
+                    </a>
+                </div> <!--
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-xs-4 thumb column nature">
+                    <a href="img/photo/" class="fancybox content" rel="ligthbox">
+                        <img src="img/photo/______.jpg" class="img-fluid"  alt="">
+                    </a>
+                </div> -->                
+            </div>
+        </div>
+
+    <!--.........................................................-->
+    <!--CONTACT-->
+        <div id="contact" class="row w3-panel">
+            <div class="col-xl-6 pt-3 pb-3">
+                <h5>PRZEDSIĘBIORSTWO USŁUGOWO-HANDLOWE<br/> Krzysztof Leśniak</h5>
+                Dąbrowa 24<br/>
+                56-400 Oleśnica<br/>
+                Dolnośląskie, Polska<br/>
+                <i class="fas fa-phone-volume" ></i>&nbsp;&nbsp; 501-568-004<br/>
+                <i class="fas fa-envelope" ></i>&nbsp; bruki.krzysztoflesniak@wp.pl<br/>
+            </div>
+            <div class="col-xl-6 align-self-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7066.511536724238!2d17.35926505872834!3d51.23032352797747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe334c1fe91b9%3A0x6da36eb5c8da1614!2sD%C4%85browa+24%2C+56-400+D%C4%85browa!5e0!3m2!1spl!2spl!4v1534427831485" 
+                width="330" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    <!--.........................................................-->
+    <div class="col-12" style="background-color: #535353; text-align: center; color: gray;">Dominika Rzepka &copy; - All Rights Reserved, 2018</div>
+        
+
+<!---->
+ </main>
+<!--JS-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<script src="js/viewportchecker.js"></script> 
+<script src="js/visibility.js"></script>
+<script src="js/shuffle.js"></script>
+<script src="js/fancybox/fancybox.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+</body>
+</html>

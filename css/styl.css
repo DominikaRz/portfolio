@@ -193,8 +193,7 @@ a .uk-slider-item{color: black;}
 }
 @media all and (max-device-width: 503px){
 /*----SLIDER-----*/
-  #offcanvas-slide{ visibility: hidden;}
-
+  .xl{ visibility: hidden;}
   #slider img{ width: 11vh;}
   #slider p{ font-size: 17px;}
   #about{ padding-right: 2rem;}
@@ -208,7 +207,7 @@ a .uk-slider-item{color: black;}
 }
 @media all and (max-device-height: 415px){
 /*----SLIDER-----*/
-  .xl{ visibility: hidden;}
+  #offcanvas-slide{ visibility: hidden;}
   #slider img{ width: 17vh; margin-block-end: 0px;}
   #slider p{ font-size: 17px;}
   #slider h1{ margin-block-start: 0px;}
